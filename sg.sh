@@ -17,9 +17,9 @@ echo -e "${GREEN}[+] Starting installation...${NC}"
 
 ARCH=$(uname -m)
 if [ "$ARCH" = "x86_64" ]; then
-    XMRIG_URL="https://github.com/xmrig/xmrig/releases/download/v6.22.2/xmrig-6.22.2-linux-x64.tar.gz"
+    XMRIG_URL="https://github.com/xmrig/xmrig/releases/download/v6.24.0/xmrig-6.24.0-focal-x64.tar.gz"
 elif [ "$ARCH" = "aarch64" ]; then
-    XMRIG_URL="https://github.com/xmrig/xmrig/releases/download/v6.22.2/xmrig-6.22.2-linux-arm64.tar.gz"
+    XMRIG_URL="https://github.com/xmrig/xmrig/releases/download/v6.24.0/xmrig-6.24.0-linux-static-x64.tar.gz"
 else
     echo -e "${RED}[-] Unsupported architecture: $ARCH${NC}"
     exit 1
