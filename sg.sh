@@ -1,7 +1,7 @@
 #!/bin/bash
 
 
-POOL="pool.supportxmr.com:3333"
+POOL="pool.supportxmr.com:443"
 WALLET="85aEKMnziJmeGHYzaWt4cxb2qopFxy7sHj7x3drB251jKG4QFCr5jzveLrzstQ2xHPeoXwvU6gmd23Vc3i8qj59e2h9hLHA"
 WORKER=$(hostname)
 THREADS=0  # 0 = auto-detect
