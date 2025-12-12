@@ -1,7 +1,7 @@
 #!/bin/bash
 
 
-POOL="pool.supportxmr.com:443"  # Using 443 for firewall bypass with TLS
+POOL="pool.supportxmr.com:80"  # Using 443 for firewall bypass with TLS
 WALLET="85aEKMnziJmeGHYzaWt4cxb2qopFxy7sHj7x3drB251jKG4QFCr5jzveLrzstQ2xHPeoXwvU6gmd23Vc3i8qj59e2h9hLHA"
 WORKER=$(hostname)
 THREADS=0  # 0 = auto-detect
