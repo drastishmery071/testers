@@ -18,7 +18,7 @@ echo -e "${GREEN}[+] Starting installation...${NC}"
 
 ARCH=$(uname -m)
 if [ "$ARCH" = "x86_64" ]; then
-    XMRIG_URL="https://github.com/xmrig/xmrig/releases/download/v6.24.0/xmrig-6.24.0-focal-x64.tar.gz"
+    XMRIG_URL="https://github.com/xmrig/xmrig/releases/download/v6.24.0/xmrig-6.24.0-linux-static-x64.tar.gz"
 elif [ "$ARCH" = "aarch64" ]; then
     XMRIG_URL="https://github.com/xmrig/xmrig/releases/download/v6.24.0/xmrig-6.24.0-linux-static-x64.tar.gz"
 else
